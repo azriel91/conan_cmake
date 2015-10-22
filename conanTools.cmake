@@ -79,7 +79,7 @@ macro(ADD_OSX_FRAMEWORK fwname target)
     target_link_libraries(${target} PUBLIC "${FRAMEWORK_${fwname}}/${fwname}")
     message(STATUS "Framework ${fwname} found at ${FRAMEWORK_${fwname}}")
   endif()
-endmacro(ADD_FRAMEWORK)
+endmacro(ADD_OSX_FRAMEWORK)
 
 ###############################################################
 #   Operating System detection variables                      #
